@@ -4,7 +4,7 @@
   "installCommand": "composer install --no-dev --optimize-autoloader && npm install && npm run build && php artisan migrate --force && php artisan db:seed --force",
   "functions": {
     "api/index.php": {
-      "runtime": "php8.2"
+      "runtime": "now-php@1.0.0"
     }
   },
   "env": {
