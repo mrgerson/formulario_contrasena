@@ -1,5 +1,4 @@
 {
-  "installCommand": "composer install --no-dev --optimize-autoloader && npm install && npm run build && php artisan migrate --force && php artisan db:seed --force",
   "buildCommand": "npm run build",
   "outputDirectory": "public/build"
 }
