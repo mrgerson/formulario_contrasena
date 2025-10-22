@@ -1,8 +1,7 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "public/build",
-  "framework": "laravel",
-  "installCommand": "chmod +x deploy.sh && ./deploy.sh",
+  "installCommand": "composer install --no-dev --optimize-autoloader && npm install && npm run build && php artisan migrate --force && php artisan db:seed --force",
   "functions": {
     "api/index.php": {
       "runtime": "php8.2"
