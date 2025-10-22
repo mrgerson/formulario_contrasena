@@ -1,0 +1,20 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "public/build",
+  "framework": "laravel",
+  "installCommand": "chmod +x deploy.sh && ./deploy.sh",
+  "functions": {
+    "api/index.php": {
+      "runtime": "php8.2"
+    }
+  },
+  "env": {
+    "APP_ENV": "production",
+    "APP_DEBUG": "false"
+  },
+  "build": {
+    "env": {
+      "APP_ENV": "production"
+    }
+  }
+}
